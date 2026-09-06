@@ -1,0 +1,70 @@
+name: Actualizar RSS completa de ICSID
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "7 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-rss-completa-icsid
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Comprobar horario español
+        id: horario
+        shell: bash
+        run: |
+          DIA=$(TZ=Europe/Madrid date +%u)
+          HORA=$(TZ=Europe/Madrid date +%H)
+          HORA=$((10#$HORA))
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "ejecutar=si" >> "$GITHUB_OUTPUT"
+          elif [ "$DIA" -ge 1 ] && [ "$DIA" -le 6 ] && [ "$HORA" -ge 7 ] && [ "$HORA" -le 22 ] && [ $(((HORA - 7) % 4)) -eq 0 ]; then
+            echo "ejecutar=si" >> "$GITHUB_OUTPUT"
+          else
+            echo "ejecutar=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Descargar repositorio
+        if: steps.horario.outputs.ejecutar == 'si'
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        if: steps.horario.outputs.ejecutar == 'si'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependencias
+        if: steps.horario.outputs.ejecutar == 'si'
+        run: python -m pip install -r requirements.txt
+
+      - name: Crear RSS completa
+        if: steps.horario.outputs.ejecutar == 'si'
+        run: python actualizar_rss.py
+
+      - name: Guardar cambios
+        if: steps.horario.outputs.ejecutar == 'si'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add rss.xml estado.json
+
+          if git diff --cached --quiet; then
+            echo "No hay novedades"
+          else
+            git commit -m "Actualizar RSS completa de ICSID"
+            git push
+          fi
