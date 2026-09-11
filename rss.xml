@@ -5,7 +5,7 @@
     <link>https://icsid.worldbank.org</link>
     <description>Casos registrados, documentos publicados, casos concluidos, tribunales constituidos, noticias, eventos, comunicados y publicaciones del ICSID.</description>
     <language>multilingual</language>
-    <lastBuildDate>Fri, 11 Sep 2026 05:20:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 09:22:14 +0000</lastBuildDate>
     <item>
       <title>Caso concluido: Doups Holdings LLC v. United Mexican States (ICSID Case No. ARB/22/24)</title>
       <link>https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/22/24</link>
@@ -13,6 +13,14 @@
       <pubDate>Fri, 11 Sep 2026 05:20:35 +0000</pubDate>
       <category>Caso concluido</category>
       <description>ICSID ha incorporado una actualización clasificada como «Caso concluido». Fecha publicada: no indicada.</description>
+      <author>ICSID</author>
+    </item>
+    <item>
+      <title>Istanbul Arbitration Days 2026</title>
+      <link>https://icsid.worldbank.org/news-and-events/events/istanbul-arbitration-days-2026</link>
+      <guid isPermaLink="false">icsid-event-88f4938f29f44ca4b92f8500f2b925f3864f93207d9c33f9f681c6e9ec643046</guid>
+      <pubDate>Thu, 10 Sep 2026 13:47:30 -0400</pubDate>
+      <category>Events</category>
       <author>ICSID</author>
     </item>
     <item>
@@ -31,6 +39,33 @@
       <pubDate>Thu, 10 Sep 2026 17:20:35 +0000</pubDate>
       <category>Caso concluido</category>
       <description>ICSID ha incorporado una actualización clasificada como «Caso concluido». Fecha publicada: no indicada.</description>
+      <author>ICSID</author>
+    </item>
+    <item>
+      <title>Listes d’arbitres et de conciliateurs - CIRDI/10</title>
+      <link>https://icsid.worldbank.org/fr/ressources/listes/cirdi/10</link>
+      <guid isPermaLink="false">icsid-event-d48da073abb59fec5f250ac820ebf76a2bcbfb8f40f21d572a996a47112d91a0</guid>
+      <pubDate>Thu, 10 Sep 2026 13:00:17 -0400</pubDate>
+      <category>Ressources</category>
+      <description>Le CIRDI tient à jour une liste regroupant les personnes désignées pour figurer sur les Listes d'arbitres et de conciliateurs du CIRDI (CIRDI/10) (article 21 du Règlement administratif et financier).</description>
+      <author>ICSID</author>
+    </item>
+    <item>
+      <title>Listas de Árbitros y de Conciliadores - CIADI/10</title>
+      <link>https://icsid.worldbank.org/es/recursos/listas/ciadi/10</link>
+      <guid isPermaLink="false">icsid-event-8027ec0404bc4d5db899c6379785bae746d184662f6509eea3b0cd44a64812c9</guid>
+      <pubDate>Thu, 10 Sep 2026 13:00:17 -0400</pubDate>
+      <category>Recursos</category>
+      <description>El CIADI mantiene una lista de las personas designadas actuales que figuran en las Listas de Árbitros y de Conciliadores (CIADI/10) (Regla 21 del Reglamento Administrativo y Financiero).</description>
+      <author>ICSID</author>
+    </item>
+    <item>
+      <title>Members of the ICSID Panels of Arbitrators and of Conciliators - ICSID/10</title>
+      <link>https://icsid.worldbank.org/resources/lists/panels</link>
+      <guid isPermaLink="false">icsid-event-982bd6fb23afbf902d405d4e89dd1e6645067df271a08ad19ac5b62707b83bcc</guid>
+      <pubDate>Thu, 10 Sep 2026 13:00:17 -0400</pubDate>
+      <category>ICSID</category>
+      <description>​​​ICSID maintains a list of current designees to the ICSID Panels of Arbitrators and of Conciliators (ICSID/10) (Administrative and Financial Regulation 24).</description>
       <author>ICSID</author>
     </item>
     <item>
