@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>CIADI — Cambios en expedientes</title>
+    <link>https://icsid.worldbank.org/cases/case-database</link>
+    <description>Altas, actuaciones, documentos y cambios de estado en expedientes del CIADI.</description>
+    <language>es</language>
+  </channel>
+</rss>
